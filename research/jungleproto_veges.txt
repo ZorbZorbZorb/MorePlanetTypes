@@ -1,0 +1,6 @@
+[Warning: Unity Log] Vegetables0 1023,124,603,126,121,605
+[Warning: Unity Log] Vegetables1 605,121,122,125,1021,604,603,126
+[Warning: Unity Log] Vegetables2 1023
+[Warning: Unity Log] Vegetables3 1023,1021,1006
+[Warning: Unity Log] Vegetables4 1023,1021
+[Warning: Unity Log] Vegetables5 1022

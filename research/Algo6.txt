@@ -1,0 +1,10 @@
+// Algo 6
+
+// How the arrays are used
+Vegetables0 // Unused
+Vegetables1 // Medium density, Biome border only
+Vegetables2 // Dense clumped ground scatter, everywhere
+Vegetables3 // Sparse, lowland only
+Vegetables4 // Unused
+Vegetables5 // Dense, Highland only
+
