@@ -64,7 +64,7 @@ namespace MorePlanetTypes.Patches {
                 forest1Birth.RareSettings = birthProto.RareSettings;
                 forest1Birth.RareVeins = birthProto.RareVeins;
                 forest1Birth.Distribute = EThemeDistribute.Birth;
-                //themes.AddProto(forest1Birth);
+                themes.AddProto(forest1Birth);
                 #endregion
 
                 #region LavaOcean
