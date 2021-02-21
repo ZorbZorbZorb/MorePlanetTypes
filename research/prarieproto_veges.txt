@@ -1,0 +1,9 @@
+// Prarie theme proto
+
+// Default array values
+Vegetables0 1001,1001,1003,1003,1001,1002
+Vegetables1 1001,1001,1003,604,1002,1003,1002
+Vegetables2 1001,1002,1003
+Vegetables3 1001,1003,1002
+Vegetables4 1004
+Vegetables5 1001,1001,1002,1002,1003,101
