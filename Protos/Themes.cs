@@ -85,12 +85,8 @@ namespace MorePlanetTypes.Protos {
             throw new NotImplementedException();
         }
         public static ThemeProto GetRedForest(ThemeProtoSet themes, int newId) {
-            ThemeProto birthProto = themes.dataArray[0].Copy();
             ThemeProto jungleProto = themes.dataArray[7].Copy();
-            ThemeProto lavaProto = themes.dataArray[8].Copy();
             ThemeProto mushroomProto = themes.dataArray[13].Copy();
-            ThemeProto prarieProto = themes.dataArray[14].Copy();
-            ThemeProto oceanProto = themes.dataArray[15].Copy();
 
             ThemeProto redForest = jungleProto;
 
@@ -98,22 +94,7 @@ namespace MorePlanetTypes.Protos {
             redForest.DisplayName = "Red Forest";
             redForest.Name = "MorePlanetTypes-Forest-2-Interstellar";
 
-            //redForest.MaterialPath = mushroomProto.MaterialPath;
             redForest.MaterialPath = jungleProto.MaterialPath;
-            Debug.LogWarning($"MaterialPath:'{mushroomProto.MaterialPath}'");
-
-            //redForest.Vegetables0 = birthProto.Vegetables0;
-            //redForest.Vegetables1 = birthProto.Vegetables1;
-            //redForest.Vegetables2 = birthProto.Vegetables2;
-            //redForest.Vegetables3 = birthProto.Vegetables3;
-            //redForest.Vegetables4 = birthProto.Vegetables4;
-            //redForest.Vegetables5 = birthProto.Vegetables5;
-
-            //List<int> newVeges5 = redForest.Vegetables5.ToList();
-            //newVeges5.Add(45);
-            //redForest.Vegetables5 = newVeges5.ToArray();
-
-            Debug.LogWarning("red forest algos: " + string.Join(",", redForest.Algos.Select(x => x.ToString()).ToArray()));
             redForest.Algos = new int[] { 41 };
 
             redForest.RareSettings = mushroomProto.RareSettings;
@@ -128,17 +109,6 @@ namespace MorePlanetTypes.Protos {
             redForest.Vegetables3 = new int[] { 26, 26, 26, 26, 45, 602, 603, 604};  // Ground
             redForest.Vegetables4 = new int[] { 1001, 26, 602, 603, 604 };  // Semi clumped shoreline
             redForest.Vegetables5 = new int[] {  25, 32, 36, 37, 39, 41 };  // Water
-
-            Debug.LogWarning(redForest.WaterHeight);  // 0f
-
-            // Atmos mat, terrain mat, minimpa map and thumb mat are all null at loadtime
-            //Debug.LogError($"atmos mat is null? {redForest.atmosMat == null}");       // true
-            //Debug.LogError($"terrain mat is null? {redForest.terrainMat == null}");   // true
-            //Debug.LogError($"minimap mat is null? {redForest.minimapMat == null}");   // true
-            //Debug.LogError($"thumb mat is null? {redForest.thumbMat == null}");       // true
-
-            //Color color = new Color();
-            //Debug.LogError($"a:{currentColor.a} r:{currentColor.r} g:{currentColor.g} b:{currentColor.b} gamma:{currentColor.gamma}");
 
             return redForest;
         }

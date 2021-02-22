@@ -28,19 +28,22 @@ namespace MorePlanetTypes.Patches {
             }
             
             else if ( __result is ThemeProtoSet themes ) {
+
                 ThemeProto forest1 = Themes.GetForest1(themes, 40);
                 ThemeProto forest1Birth = Themes.GetForest1Birth(themes, 30, forest1);
 
                 themes.AddProto(forest1);
-                //themes.AddProto(forest1Birth);
+                themes.AddProto(forest1Birth);
 
-                themes.AddProto(Themes.GetMolten(themes, 42));
+                ThemeProto molten = Themes.GetMolten(themes, 20);
+                themes.AddProto(molten);
 
                 ThemeProto redForest = Themes.GetRedForest(themes, 41);
-                //themes.AddProto(redForest);
-                redForest.ID = 1;
-                redForest.Distribute = EThemeDistribute.Birth;
-                themes.dataArray[0] = redForest;
+                themes.AddProto(redForest);
+
+                //redForest.ID = 1;
+                //redForest.Distribute = EThemeDistribute.Birth;
+                //themes.dataArray[0] = redForest;
 
             }
         }
@@ -59,6 +62,19 @@ namespace MorePlanetTypes.Patches {
         //veges.dataIndices.Remove(sentinalIndice.Key);
         //veges.dataIndices.Add(sentinalIndice.Key, sentinalIndice.Value + 1);
         //Debug.LogWarning($"Sentinal vege bumped to ({sentinalIndice.Key}, {sentinalIndice.Value + 1})");
+
+
+        // Atmos mat, terrain mat, minimpa map and thumb mat are all null at loadtime
+        //Debug.LogError($"atmos mat is null? {redForest.atmosMat == null}");       // true
+        //Debug.LogError($"terrain mat is null? {redForest.terrainMat == null}");   // true
+        //Debug.LogError($"minimap mat is null? {redForest.minimapMat == null}");   // true
+        //Debug.LogError($"thumb mat is null? {redForest.thumbMat == null}");       // true
+
+        //Color color = new Color();
+        //Debug.LogError($"a:{currentColor.a} r:{currentColor.r} g:{currentColor.g} b:{currentColor.b} gamma:{currentColor.gamma}");
+
+
+        //Debug.LogWarning($"MaterialPath:'{mushroomProto.MaterialPath}'");
 
 
         // Planet gen stuff

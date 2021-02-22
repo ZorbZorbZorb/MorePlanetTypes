@@ -12,8 +12,8 @@ using xiaoye97;
 
 namespace MorePlanetTypes {
     [BepInDependency("me.xiaoye97.plugin.Dyson.LDBTool", "1.8.0")]
-    [BepInDependency("zorb.dsp.plugins.vegeandveinhelper", "1.0.1")]
-    [BepInPlugin("org.bepinex.plugins.moreplanettypes", "More planet types", "1.0.0")]
+    [BepInDependency("zorb.dsp.plugins.vegeandveinhelper", "1.1.0")]
+    [BepInPlugin("org.bepinex.plugins.moreplanettypes", "More planet types", "1.0.1")]
     [BepInProcess("DSPGAME.exe")]
     public class MorePlanetTypes : BaseUnityPlugin {
         internal void Awake() {
