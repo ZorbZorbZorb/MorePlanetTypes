@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 using xiaoye97;
 
 namespace MorePlanetTypes.Protos {
@@ -41,29 +42,31 @@ namespace MorePlanetTypes.Protos {
             forest1Birth.Name = "MorePlanetTypes-Forest-1-Birth";
             forest1Birth.RareSettings = birthProto.RareSettings;
             forest1Birth.RareVeins = birthProto.RareVeins;
+            forest1Birth.VeinCount = birthProto.VeinCount;
+            forest1Birth.VeinOpacity = birthProto.VeinOpacity;
             forest1Birth.Distribute = EThemeDistribute.Birth;
 
             return forest1Birth;
         }
         public static ThemeProto GetMolten(ThemeProtoSet themes, int newId) {
-            // Vein generation is really bugged on this one, at least when used as the birth planet
-
             ThemeProto jungleProto = themes.dataArray[7].Copy();
             ThemeProto lavaProto = themes.dataArray[8].Copy();
             ThemeProto oceanProto = themes.dataArray[15].Copy();
 
-            ThemeProto molten1 = lavaProto.Copy();
-            molten1.ID = newId;
-            molten1.DisplayName = "Molten World";
-            //molten1.WaterHeight = jungleProto.WaterHeight;
-            //molten1.IonHeight = jungleProto.IonHeight;
-            //molten1.Algos = jungleProto.Algos;
-            //molten1.ModX = jungleProto.ModX;
-            //molten1.ModY = jungleProto.ModY;
-            molten1.Temperature = lavaProto.Temperature; //* 1.2f;
-            molten1.atmosMat = oceanProto.atmosMat;
+            ThemeProto molten = lavaProto.Copy();
+            molten.ID = newId;
+            molten.DisplayName = "Molten World";
+            molten.WaterHeight = jungleProto.WaterHeight * 0.8f;
+            molten.IonHeight = jungleProto.IonHeight;
+            //molten.Algos = new int[] { 41 };
+            molten.atmosMat = oceanProto.atmosMat;
+            molten.Algos = jungleProto.Algos;
+            molten.ModX = jungleProto.ModX;
+            molten.ModY = jungleProto.ModY;
+            molten.Temperature = lavaProto.Temperature * 1.1f;
+            molten.atmosMat = oceanProto.atmosMat;
 
-            return molten1;
+            return molten;
         }
         public static ThemeProto GetCliffs(ThemeProtoSet themes, int newId) {
             ThemeProto birthProto = themes.dataArray[0].Copy();

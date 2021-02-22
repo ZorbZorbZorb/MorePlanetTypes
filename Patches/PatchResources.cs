@@ -20,20 +20,23 @@ namespace MorePlanetTypes.Patches {
                 ////newVege.prefabDesc.prefab.transform.localScale *= 2;
                 //__result = veges;
 
-                VegeProto neqSequoia1 = veges.Select(46).Copy();
-                neqSequoia1.ID = 250;
-                veges.AddProto(neqSequoia1);
+                //VegeProto neqSequoia1 = veges.Select(46).Copy();
+                //neqSequoia1.ID = 250;
+                //veges.AddProto(neqSequoia1);
 
-                __result = veges;
+                //__result = veges;
             }
             
             else if ( __result is ThemeProtoSet themes ) {
                 ThemeProto forest1 = Themes.GetForest1(themes, 40);
                 ThemeProto forest1Birth = Themes.GetForest1Birth(themes, 30, forest1);
+
                 themes.AddProto(forest1);
                 themes.AddProto(forest1Birth);
 
-                ThemeProto molten = Themes.GetMolten(themes, 41);
+                themes.AddProto(Themes.GetMolten(themes, 42));
+
+                //ThemeProto molten = Themes.GetMolten(themes, 41);
                 //themes.AddProto(molten);
                 //molten.ID = 1;
                 //molten.Distribute = EThemeDistribute.Birth;
