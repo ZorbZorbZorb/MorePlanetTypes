@@ -32,15 +32,15 @@ namespace MorePlanetTypes.Patches {
                 ThemeProto forest1Birth = Themes.GetForest1Birth(themes, 30, forest1);
 
                 themes.AddProto(forest1);
-                themes.AddProto(forest1Birth);
+                //themes.AddProto(forest1Birth);
 
                 themes.AddProto(Themes.GetMolten(themes, 42));
 
-                //ThemeProto molten = Themes.GetMolten(themes, 41);
-                //themes.AddProto(molten);
-                //molten.ID = 1;
-                //molten.Distribute = EThemeDistribute.Birth;
-                //themes.dataArray[0] = molten;
+                ThemeProto redForest = Themes.GetRedForest(themes, 41);
+                //themes.AddProto(redForest);
+                redForest.ID = 1;
+                redForest.Distribute = EThemeDistribute.Birth;
+                themes.dataArray[0] = redForest;
 
             }
         }
