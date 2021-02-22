@@ -68,9 +68,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algos\PlanetAlgorithmRedForest.cs" />
     <Compile Include="Helpers\ResourceHelpers.cs" />
     <Compile Include="MorePlanetTypes.cs" />
     <Compile Include="Patches\PatchPlanetGen.cs" />
+    <Compile Include="Patches\PatchPlanetModelingManager.cs" />
     <Compile Include="Patches\PatchResources.cs" />
     <Compile Include="Patches\PatchUniverseGen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

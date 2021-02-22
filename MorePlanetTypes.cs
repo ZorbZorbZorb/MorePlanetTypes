@@ -22,6 +22,7 @@ namespace MorePlanetTypes {
             Harmony.CreateAndPatchAll(typeof(PatchResources), harmony.Id);
             Harmony.CreateAndPatchAll(typeof(PatchPlanetGen), harmony.Id);
             Harmony.CreateAndPatchAll(typeof(PatchUniverseGen), harmony.Id);
+            Harmony.CreateAndPatchAll(typeof(PatchPlanetModelingManager), harmony.Id);
         }
     }
 }

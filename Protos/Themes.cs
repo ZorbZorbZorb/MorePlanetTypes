@@ -113,6 +113,9 @@ namespace MorePlanetTypes.Protos {
             //newVeges5.Add(45);
             //redForest.Vegetables5 = newVeges5.ToArray();
 
+            Debug.LogWarning("red forest algos: " + string.Join(",", redForest.Algos.Select(x => x.ToString()).ToArray()));
+            redForest.Algos = new int[] { 41 };
+
             redForest.RareSettings = mushroomProto.RareSettings;
             redForest.RareVeins = mushroomProto.RareVeins;
             redForest.VeinCount = mushroomProto.VeinCount;
@@ -120,7 +123,7 @@ namespace MorePlanetTypes.Protos {
             redForest.VeinSpot = mushroomProto.VeinSpot;
 
             redForest.Vegetables0 = new int[] { 26, 26, 45, 603, 604 };  // lowlands
-            redForest.Vegetables1 = new int[] { 1001, 1001, 1001, 1001, 1001, 1001, 45, 26 };  // Ground scatter, highlands
+            redForest.Vegetables1 = new int[] { 1001, 1001, 1001, 1001, 1001, 1001, 45, 26, 26 };  // Ground scatter, highlands
             redForest.Vegetables2 = new int[] { 1001 };  // Grass ground scatter, highlands
             redForest.Vegetables3 = new int[] { 26, 26, 26, 26, 45, 602, 603, 604};  // Ground
             redForest.Vegetables4 = new int[] { 1001, 26, 602, 603, 604 };  // Semi clumped shoreline
