@@ -40,13 +40,13 @@
 [Warning: Unity Log] arrIndx:  38 | id:  39 | type:    Tree | name:              Tree 26
 [Warning: Unity Log] arrIndx:  39 | id:  40 | type:    Tree | name:              Tree 27
 [Warning: Unity Log] arrIndx:  40 | id:  41 | type:    Tree | name:              Tree 28
-[Warning: Unity Log] arrIndx:  41 | id:  42 | type:    Tree | name:              Tree 29
-[Warning: Unity Log] arrIndx:  42 | id:  43 | type:    Tree | name:              Tree 30  (Tall thin tree)
-[Warning: Unity Log] arrIndx:  43 | id:  44 | type:    Tree | name:              Tree 31  (Bright Green shrubland bushes)
-[Warning: Unity Log] arrIndx:  44 | id:  45 | type:    Tree | name:              Tree 32  (Large fern)
-[Warning: Unity Log] arrIndx:  45 | id:  46 | type:    Tree | name:              Tree 33  (Giant red canopy tree)
-[Warning: Unity Log] arrIndx:  46 | id:  47 | type:    Tree | name:              Tree 34  (Giant Sequoia tree)
-[Warning: Unity Log] arrIndx:  47 | id:  48 | type:   Stone | name:             Stone 13  (Small fern)
+[Warning: Unity Log] arrIndx:  41 | id:  42 | type:    Tree | name:              Tree 29 	(Tall thin tree)
+[Warning: Unity Log] arrIndx:  42 | id:  43 | type:    Tree | name:              Tree 30 	(Bright Green shrubland bushes)
+[Warning: Unity Log] arrIndx:  43 | id:  44 | type:    Tree | name:              Tree 31 	(Large fern)
+[Warning: Unity Log] arrIndx:  44 | id:  45 | type:    Tree | name:              Tree 32	(Giant red canopy tree)
+[Warning: Unity Log] arrIndx:  45 | id:  46 | type:    Tree | name:              Tree 33  	(Giant Sequoia tree)
+[Warning: Unity Log] arrIndx:  46 | id:  47 | type:    Tree | name:              Tree 34  	(Small fern)
+[Warning: Unity Log] arrIndx:  47 | id:  48 | type:   Stone | name:             Stone 13 
 [Warning: Unity Log] arrIndx:  48 | id:  49 | type:   Stone | name:             Stone 14
 [Warning: Unity Log] arrIndx:  49 | id:  50 | type:   Stone | name:             Stone 15
 [Warning: Unity Log] arrIndx:  50 | id:  51 | type:   Stone | name:             Stone 16

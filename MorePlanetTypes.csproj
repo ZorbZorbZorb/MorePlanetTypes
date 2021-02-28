@@ -69,8 +69,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algos\PlanetAlgorithmRedForest.cs" />
+    <Compile Include="Algos\PlanetAlgorithmSulfurSea.cs" />
+    <Compile Include="Extensions\MaterialExtensions.cs" />
     <Compile Include="Helpers\ResourceHelpers.cs" />
+    <Compile Include="Interfaces\INewContent.cs" />
     <Compile Include="MorePlanetTypes.cs" />
+    <Compile Include="Patches\PatchGameMain.cs" />
     <Compile Include="Patches\PatchPlanetGen.cs" />
     <Compile Include="Patches\PatchPlanetModelingManager.cs" />
     <Compile Include="Patches\PatchResources.cs" />
@@ -79,9 +83,23 @@
     <Compile Include="Protos\Themes.cs" />
     <Compile Include="Protos\Veges.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="manifest.json" />
+    <None Include="README.md" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy /y "C:\Users\Computer\source\dsp_modding\repos\MorePlanetTypes\bin\Debug\MorePlanetTypes.dll" "C:\Program Files (x86)\Steam\steamapps\common\Dyson Sphere Program\BepInEx\plugins\MorePlanetTypes.dll"</PostBuildEvent>
+    <PostBuildEvent>copy /y "C:\Users\Computer\source\dsp_modding\repos\MorePlanetTypes\bin\Debug\MorePlanetTypes.dll" "C:\Program Files (x86)\Steam\steamapps\common\Dyson Sphere Program\BepInEx\plugins\MorePlanetTypes.dll"
+
+copy /y "C:\Users\Computer\source\dsp_modding\repos\MorePlanetTypes\README.md" "C:\Users\Computer\source\dsp_modding\repos\MorePlanetTypes\release\Latest_Built\README.md"
+
+copy /y "C:\Users\Computer\source\dsp_modding\repos\MorePlanetTypes\bin\Debug\MorePlanetTypes.dll" "C:\Users\Computer\source\dsp_modding\repos\MorePlanetTypes\release\Latest_Built\MorePlanetTypes.dll"
+
+copy /y "C:\Users\Computer\source\dsp_modding\repos\MorePlanetTypes\icon.png" "C:\Users\Computer\source\dsp_modding\repos\MorePlanetTypes\release\Latest_Built\icon.png"
+
+copy /y "C:\Users\Computer\source\dsp_modding\repos\MorePlanetTypes\manifest.json" "C:\Users\Computer\source\dsp_modding\repos\MorePlanetTypes\release\Latest_Built\manifest.json"</PostBuildEvent>
   </PropertyGroup>
 </Project>

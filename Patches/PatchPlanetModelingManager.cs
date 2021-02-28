@@ -36,6 +36,9 @@ namespace MorePlanetTypes.Patches {
 				case 7:
 				planetAlgorithm = new PlanetAlgorithm7();
 				break;
+				case 21:
+				planetAlgorithm = new PlanetAlgorithmSulfurSea();
+				break;
 				case 41:
 				planetAlgorithm = new PlanetAlgorithmRedForest();
 				break;

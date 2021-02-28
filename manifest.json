@@ -1,0 +1,7 @@
+{
+    "name": "More_Planet_Types",
+    "version_number": "1.2.0",
+    "website_url": "https://github.com/ZorbZorbZorb/MorePlanetTypes",
+    "description": "Adds more types of planets to the game",
+    "dependencies": ["xiaoye97-BepInEx-5.4.5", "Zorb-Vein_and_Vege_Helper-1.0.1", "xiaoye97-LDBTool-1.8.0"]
+}
